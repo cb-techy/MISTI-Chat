@@ -1,4 +1,17 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<div id="container" class="container card">
+  <div class="card-body">
+    <div class="container card" id="chatScreen">
+      <!--Chat-Screen-->
+      <!-- <p *ngIf = "msgTop">{{ msgTop }}</p> -->
+      <div><input id="msg" class="form-control" *ngFor="let i of msgs" value="{{ i }}" disabled></div>
+      <!-- <div *ngFor="let i of msgs">{{ i }}</div> -->
+    </div>
+  </div>
+  <div id="bottomBar" class="card-body btn-group">
+    <input type="text" class="form-control" placeholder="Type Message" aria-label="Input group example" aria-describedby="btnGroupAddon2" [(ngModel)]="msg">
+    <div class="input-group-text btn btn-primary" id="btnGroupAddon2" (click)="sendMsg()">Send</div>
+
+  </div>
+</div>

@@ -7,4 +7,11 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  msg=""
+  msgTop=""
+  msgs = []
+  sendMsg(){
+    this.msgs.push(this.msg)
+    this.msgTop = this.msg
+  }
 }

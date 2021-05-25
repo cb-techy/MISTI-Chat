@@ -1,3 +1,19 @@
-p {
-  font-family: Lato;
+#container {
+  margin-top: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+#btnGroupAddon2 {
+  width: 30vw;
+}
+#chatScreen {
+  height: 70vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: auto;
+}
+#msg {
+  background-color: cornflowerblue;
+  margin: 2vw;
+  width: auto;
+  -ms-wrap-through: auto !important;
 }
