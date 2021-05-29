@@ -14,6 +14,8 @@
 #msg {
   background-color: cornflowerblue;
   margin: 2vw;
-  width: auto;
-  -ms-wrap-through: auto !important;
+  width: max-content !important;
+  height:max-content !important;
+  border-bottom-right-radius: 0px !important;
+  border-radius: 25px;
 }
